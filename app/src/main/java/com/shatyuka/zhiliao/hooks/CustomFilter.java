@@ -39,6 +39,7 @@ public class CustomFilter implements IHook {
     static Field Element_id;
     static Field Line_elements;
     static Field TextElement_text;
+    static Field HtmlTextElement_text;
 
     @Override
     public String getName() {
@@ -73,6 +74,12 @@ public class CustomFilter implements IHook {
             TextElement = classLoader.loadClass("com.zhihu.android.ui.shared.sdui.model.TextElement");
             TextElement_text = TextElement.getDeclaredField("text");
             TextElement_text.setAccessible(true);
+            try {
+                Class<?> HtmlTextElement = classLoader.loadClass("com.zhihu.android.ui.shared.sdui.model.HtmlTextElement");
+                HtmlTextElement_text = HtmlTextElement.getDeclaredField("text");
+                HtmlTextElement_text.setAccessible(true);
+            } catch (ClassNotFoundException ignored) {
+            }
             Line = classLoader.loadClass("com.zhihu.android.ui.shared.sdui.model.Line");
             Line_elements = Line.getDeclaredField("elements");
             Line_elements.setAccessible(true);
@@ -106,6 +113,10 @@ public class CustomFilter implements IHook {
                     if (result != null) {
                         if (resultClass == ApiTemplateRoot) {
                             String type = (String) Helper.DataUnique_type.get(ApiTemplateRoot_extra.get(result));
+                            if (filter(type, false, null, null, null)) {
+                                param.setResult(null);
+                                return;
+                            }
                             boolean hasVideo = false;
                             String title = "";
                             String author = "";
@@ -113,6 +124,10 @@ public class CustomFilter implements IHook {
                             Object feed_content = ApiFeedCard_feed_content.get(ApiTemplateRoot_common_card.get(result));
                             if (feed_content != null) {
                                 hasVideo = ApiFeedContent_video.get(feed_content) != null;
+                                if (filter(type, hasVideo, null, null, null)) {
+                                    param.setResult(null);
+                                    return;
+                                }
 
                                 title = (String) ApiText_panel_text.get(ApiFeedContent_title.get(feed_content));
 
@@ -129,18 +144,26 @@ public class CustomFilter implements IHook {
                         } else if (resultClass == Card) {
                             Object extra = Card_extra.get(result);
                             String type = (String) Card_Extra_contentType.get(extra);
+                            // Content-type switches must not depend on optional title/summary models.
+                            if (filter(type, false, null, null, null)) {
+                                param.setResult(null);
+                                return;
+                            }
                             boolean hasVideo = false;
                             String title = null;
                             String author = null;
                             String content = null;
                             List<?> elements = (List<?>) Card_elements.get(result);
                             for (Object element : elements) {
+                                if (element.getClass() == Video) {
+                                    hasVideo = true;
+                                }
                                 String id = (String) Element_id.get(element);
                                 if (id == null) {
                                     continue;
                                 }
                                 if (title == null && author == null && id.equals("Text")) {
-                                    title = (String) TextElement_text.get(element);
+                                    title = getText(element);
                                     continue;
                                 }
                                 if (author == null && content == null && element.getClass() == Line && id.equals("0")) {
@@ -149,8 +172,9 @@ public class CustomFilter implements IHook {
                                         Object avatarElement = lineElements.get(0);
                                         if (avatarElement.getClass() == Avatar) {
                                             for (Object lineElement : lineElements) {
-                                                if (lineElement.getClass() == TextElement) {
-                                                    author = (String) TextElement_text.get(lineElement);
+                                                String text = getText(lineElement);
+                                                if (text != null) {
+                                                    author = text;
                                                     break;
                                                 }
                                             }
@@ -159,10 +183,7 @@ public class CustomFilter implements IHook {
                                     }
                                 }
                                 if (content == null && id.endsWith("_summary")) {
-                                    content = (String) TextElement_text.get(element);
-                                }
-                                if (element.getClass() == Video) {
-                                    hasVideo = true;
+                                    content = getText(element);
                                 }
                             }
 
@@ -180,8 +201,18 @@ public class CustomFilter implements IHook {
         });
     }
 
+    private String getText(Object element) throws IllegalAccessException {
+        if (TextElement_text.getDeclaringClass().isInstance(element)) {
+            return (String) TextElement_text.get(element);
+        }
+        if (HtmlTextElement_text != null && HtmlTextElement_text.getDeclaringClass().isInstance(element)) {
+            return (String) HtmlTextElement_text.get(element);
+        }
+        return null;
+    }
+
     private boolean filter(String type, boolean hasVideo, String title, String author, String content) {
-        if (Helper.prefs.getBoolean("switch_video", false) && (type.equals("zvideo") || type.equals("drama") || hasVideo)) {
+        if (Helper.prefs.getBoolean("switch_video", false) && ("zvideo".equals(type) || "drama".equals(type) || hasVideo)) {
             return true;
         }
         if (Helper.prefs.getBoolean("switch_removearticle", false) && ("article".equals(type) || "Post".equals(type))) {

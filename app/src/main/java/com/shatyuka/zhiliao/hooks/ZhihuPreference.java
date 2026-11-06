@@ -366,7 +366,7 @@ public class ZhihuPreference implements IHook {
                             field.setAccessible(true);
                             Object systemBar = field.get(param.thisObject);
                             ViewGroup toolbar = (ViewGroup) systemBar.getClass().getMethod("getToolbar").invoke(systemBar);
-                            toolbar.getClass().getMethod("setTitle", CharSequence.class).invoke(toolbar, "知了");
+                            toolbar.getClass().getMethod("setTitle", CharSequence.class).invoke(toolbar, "BetterZhiliao");
 
                             ImageView restart = new ImageView(Helper.context);
                             final int _48dp = (int) (Helper.scale * 48 + 0.5);
@@ -601,7 +601,7 @@ public class ZhihuPreference implements IHook {
                         ((Context) getContext.invoke(param.thisObject)).startActivity(intent_telegram);
                         break;
                     case "preference_sourcecode":
-                        Uri uri_sourcecode = Uri.parse("https://github.com/shatyuka/Zhiliao");
+                        Uri uri_sourcecode = Uri.parse("https://github.com/starreeze/Zhiliao");
                         Intent intent_sourcecode = new Intent(Intent.ACTION_VIEW, uri_sourcecode);
                         ((Context) getContext.invoke(param.thisObject)).startActivity(intent_sourcecode);
                         break;

@@ -33,7 +33,7 @@ android {
         variant.resValue "string", "app_version", variant.versionName
         variant.outputs.configureEach { output ->
             if (variant.buildType.name == 'release') {
-                outputFileName = "Zhiliao_${defaultConfig.versionName}.apk"
+                outputFileName = "BetterZhiliao_${defaultConfig.versionName}.apk"
             }
         }
     }

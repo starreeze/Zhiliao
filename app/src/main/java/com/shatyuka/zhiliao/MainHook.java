@@ -72,11 +72,11 @@ public class MainHook implements IXposedHookLoadPackage, IXposedHookZygoteInit {
                         Helper.context = ((Application) param.args[0]).getApplicationContext();
 
                         if (!Helper.init(lpparam.classLoader))
-                            Helper.toast("知了初始化失败，可能不支持当前版本知乎: " + Helper.packageInfo.versionName, Toast.LENGTH_SHORT);
+                            Helper.toast("BetterZhiliao 初始化失败，可能不支持当前版本知乎: " + Helper.packageInfo.versionName, Toast.LENGTH_SHORT);
                         else {
                             Hooks.init(lpparam.classLoader);
                             if (!Helper.prefs.getBoolean("switch_mainswitch", false))
-                                Helper.toast("知了加载成功，请到设置页面开启功能。", Toast.LENGTH_LONG);
+                                Helper.toast("BetterZhiliao 加载成功，请到设置页面开启功能。", Toast.LENGTH_LONG);
                         }
                     }
                 }

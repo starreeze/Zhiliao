@@ -156,7 +156,7 @@ public class Helper {
 
     public static void toast(CharSequence text, int duration) {
         Toast toast = Toast.makeText(context, "", duration);
-        toast.setText("知了：" + text);
+        toast.setText("BetterZhiliao：" + text);
         toast.show();
     }
 

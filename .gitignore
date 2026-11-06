@@ -8,3 +8,6 @@
 .externalNativeBuild
 /backup
 app/.cxx
+/tmp/
+/docs/working/
+/key.jks

@@ -1,12 +1,18 @@
-# 知了
+# BetterZhiliao
 
-知乎去广告Xposed模块
+基于 [Shatyuka/知了](https://github.com/shatyuka/Zhiliao) 的知乎去广告 Xposed 模块。本分支维护版本为 **0.1**。
 
-[![Chat](https://img.shields.io/badge/Telegram-Chat-blue.svg?logo=telegram)](https://t.me/joinchat/OibCWxbdCMkJ2fG8J1DpQQ)
-[![Subscribe](https://img.shields.io/badge/Telegram-Subscribe-blue.svg?logo=telegram)](https://t.me/zhiliao)
-[![Download](https://img.shields.io/github/v/release/shatyuka/Zhiliao?label=Download)](https://github.com/shatyuka/Zhiliao/releases/latest)
-[![Stars](https://img.shields.io/github/stars/shatyuka/Zhiliao?label=Stars)](https://github.com/shatyuka/Zhiliao)
-[![License](https://img.shields.io/github/license/shatyuka/Zhiliao?label=License)](https://choosealicense.com/licenses/gpl-3.0/)
+[![Download](https://img.shields.io/github/v/release/starreeze/Zhiliao?label=Download)](https://github.com/starreeze/Zhiliao/releases/latest)
+[![Stars](https://img.shields.io/github/stars/starreeze/Zhiliao?label=Stars)](https://github.com/starreeze/Zhiliao)
+[![License](https://img.shields.io/github/license/starreeze/Zhiliao?label=License)](LICENSE.md)
+
+## 0.1 修复
+
+- 修复新版推荐卡片中的 HTML 文本模型导致自定义过滤中断的问题；提前应用视频、文章、想法等类型过滤。
+- 修复“禁止自动刷新”误拦截推荐流共享加载流程导致持续转圈的问题，保留明确的定时刷新和切换标签刷新拦截。
+- 应用及设置页名称改为 BetterZhiliao，包名仍为 `com.shatyuka.zhiliao`。
+
+已在知乎 **11.5.0（40530）** 上进行限定范围验证。测试覆盖、加载状态观察和兼容性边界见 [0.1 发布与验证记录](docs/release-0.1.md)。
 
 ## 功能
 
@@ -56,15 +62,21 @@
 - 清理临时文件
 
 ## 帮助
-[Github Wiki](https://github.com/shatyuka/Zhiliao/wiki)
+
+- [0.1 发布与验证记录](docs/release-0.1.md)
+- [上游 Github Wiki](https://github.com/shatyuka/Zhiliao/wiki)
 
 ## 下载
-[Github Release](https://github.com/shatyuka/Zhiliao/releases/latest)
 
-[Xposed Repo](https://repo.xposed.info/module/com.shatyuka.zhiliao)
+- [BetterZhiliao Github Releases](https://github.com/starreeze/Zhiliao/releases)：本分支发布入口，正式包名为 `BetterZhiliao_0.1.apk`。
+- [Github Actions](https://github.com/starreeze/Zhiliao/actions)：CI 构建产物；快照版本附带提交短编号。
 
-[蓝奏云](https://wwa.lanzoux.com/b00tscbwd) 密码:1hax
+保留上游包名是为了维持模块识别和配置兼容；安装仍要求签名一致。本地发布构建未配置正式签名时使用本机 Android 调试签名，与上游签名不同，不能直接覆盖上游包。具体安装边界见[发布记录](docs/release-0.1.md)。
+
+## 上游与致谢
+
+原项目由 **Shatyuka** 创建，本分支保留原项目版权与 GPL 许可证。上游资源：[源代码](https://github.com/shatyuka/Zhiliao)、[发布页](https://github.com/shatyuka/Zhiliao/releases)、[Xposed Repo](https://repo.xposed.info/module/com.shatyuka.zhiliao)、[Telegram 频道](https://t.me/zhiliao)、[Telegram 群](https://t.me/joinchat/OibCWxbdCMkJ2fG8J1DpQQ)。这些入口属于上游。
 
 ## License
 
-This project is licensed under the [GNU General Public Licence, version 3](https://choosealicense.com/licenses/gpl-3.0/).
+This project is licensed under the [GNU General Public License, version 3](LICENSE.md). BetterZhiliao is a fork of [Shatyuka/Zhiliao](https://github.com/shatyuka/Zhiliao); upstream attribution and license are preserved.
