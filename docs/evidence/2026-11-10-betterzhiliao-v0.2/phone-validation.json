@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-10",
+  "status": "production_installed_bounded_live_checks_complete",
+  "artifact": {
+    "path": "app/build/outputs/apk/release/BetterZhiliao_0.2.apk",
+    "final_build_local_time": "14:30",
+    "size_bytes": 132660,
+    "package": "com.starreeze.betterzhiliao",
+    "version_name": "0.2",
+    "version_code": 202602032,
+    "installed_bytes_equal_local_artifact": true,
+    "comparison_method": "complete byte comparison; no digest"
+  },
+  "final_state": {
+    "old_package_absent": true,
+    "new_package": "com.starreeze.betterzhiliao",
+    "version_name": "0.2",
+    "version_code": 202602032,
+    "installed_apk_bytes": 132660,
+    "installed_apk_equals_final_production": true,
+    "module_enabled": true,
+    "scope": [
+      {
+        "APP_PACKAGE": "com.zhihu.android",
+        "USER_ID": 0
+      }
+    ],
+    "old_preferences_count": 48,
+    "old_preferences_exactly_preserved": true,
+    "premium_switches_all_off": true,
+    "new_ad_switches_both_on": true,
+    "last_process_has_six_hook_install_markers": true,
+    "last_process_probe_marker_absent": true,
+    "last_process_unavailable_marker_absent": true,
+    "main_question_labels_visible": 3,
+    "ordinary_answer_rendered": true,
+    "phone_securely_locked": true,
+    "phone_screen_off": true,
+    "device_probe_sentinels_removed": true,
+    "staged_device_apks_removed": true
+  },
+  "test_method": {
+    "configuration": "Only the three named premium preference booleans were changed under a stopped host for independent runs; values read back before restart. New ad flags were exercised through the visible settings UI and left true.",
+    "baseline_preservation": "Compared all 48 original preference names, types and values before each controlled run and after final installation.",
+    "rendering": "Native UI hierarchy plus private screenshot inspection; no story text retained in this evidence.",
+    "build_provenance": "Premium implementation was unchanged across the tested combined builds. Final 14:30 update changed ad startup-completion handling; final fresh-process registration and Main/ordinary-answer rendering were rechecked."
+  },
+  "live_cases": [
+    {
+      "case": "question_only",
+      "flags": {
+        "recommend": false,
+        "question": true,
+        "browser": false
+      },
+      "result": "pass",
+      "observed": "A visible paid-label card in question1918993512029975976 disappeared; the same ordinary cards immediately before and after it remained.",
+      "marker_removed_counts": [
+        1,
+        2
+      ]
+    },
+    {
+      "case": "browser_only_question_isolation",
+      "flags": {
+        "recommend": false,
+        "question": false,
+        "browser": true
+      },
+      "result": "pass",
+      "observed": "The question list still displayed its paid-label card."
+    },
+    {
+      "case": "browser_only_explicit_paid_target",
+      "flags": {
+        "recommend": false,
+        "question": false,
+        "browser": true
+      },
+      "target_answer_id": "1977823141666501380",
+      "result": "pass",
+      "observed": "Explicitly opened paid answer retained its paid header and rendered preview."
+    },
+    {
+      "case": "browser_only_collection_and_next",
+      "flags": {
+        "recommend": false,
+        "question": false,
+        "browser": true
+      },
+      "initial_answer_id": "2035050147814577968",
+      "result": "bounded_pass",
+      "observed": "Native browser collection reported one removed item; native Next opened an ordinary rendered answer.",
+      "marker_removed_counts": [
+        1
+      ],
+      "limit": "No per-ID before/after visual identification of the removed related item; collection removal and healthy retained item are directly observed."
+    },
+    {
+      "case": "recommend_only_question_isolation",
+      "flags": {
+        "recommend": true,
+        "question": false,
+        "browser": false
+      },
+      "result": "pass",
+      "observed": "Question paid-label card remained visible."
+    },
+    {
+      "case": "recommend_only_retained_content",
+      "flags": {
+        "recommend": true,
+        "question": false,
+        "browser": false
+      },
+      "result": "bounded_pass",
+      "observed": "Home rendered ordinary/unknown answer cards, explicit ordinary answer and native Next remained usable.",
+      "limit": "No reliable paid-positive recommendation sample; conservative explicit metadata classification was not positively exercised live."
+    },
+    {
+      "case": "settings_and_attribution",
+      "result": "pass",
+      "observed": "Version0.2; both new ad controls and all three premium labels displayed; final premium controls OFF. Original author Shatyuka, original project Shatyuka/Zhiliao, fork-source link and GPL-3.0 notice displayed. Seven settings screens had no old stars/wiki/donation titles.",
+      "limit": "License link launched external browser; remote license page contents did not finish visibly loading and were not claimed verified."
+    },
+    {
+      "case": "ad_hooks_and_rendering",
+      "result": "registration_and_smoke_pass",
+      "observed": "Image, pendant and startup-video hook installation markers present. Main rendered healthy without floating artwork; ordinary answer99433728962 rendered after the final update.",
+      "limit": "No eligible native ad config/creative during bounded natural attempts. No popup/pendant method was invoked by the temporary probe; no actual ad suppression marker or causal visible removal proof. User explicitly waived rare-ad reproduction."
+    }
+  ],
+  "not_live_tested": [
+    "All-filtered-page continuation and mixed-page edge cases (covered by the implementation test suite, not reproduced live).",
+    "Reliable paid-positive recommendation card filtering.",
+    "A naturally encountered ordinary closed-comment negative control.",
+    "Every one of the 48 old features individually; preference preservation and bounded navigation/rendering smoke checks were verified."
+  ],
+  "privacy": {
+    "raw_story_or_auth_retained": false,
+    "private_ui_captures_retained": false,
+    "narrow_private_rollback_preferences_retained": true,
+    "phone_diagnostic_sentinels_removed": true,
+    "production_has_no_probe_registration": true
+  }
+}

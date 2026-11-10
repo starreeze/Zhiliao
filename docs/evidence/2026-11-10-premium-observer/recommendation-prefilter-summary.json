@@ -1,0 +1,109 @@
+{
+  "context": {
+    "activity": "com.zhihu.android.app.ui.activity.MainActivity",
+    "visible_tab": "recommend",
+    "ui_screens": 4,
+    "probe_scope": "global_deserializer_in_sample_window",
+    "endpoint_or_parent_collection_recorded": false,
+    "prefetch_may_include_nonvisible_items": true
+  },
+  "ready": {
+    "event": "recommendation_metadata_ready",
+    "protocol": "prefilter_metadata_with_priority_receipt",
+    "lowest_method_count": 2,
+    "highest_method_count": 2,
+    "registration_complete": true,
+    "lowest_priority": -10000,
+    "highest_priority": 10000,
+    "discovery_limit": 64,
+    "event_limit": 256,
+    "byte_limit": 524288,
+    "raw_body_capture": false
+  },
+  "event_counts": {
+    "recommendation_metadata_ready": 1,
+    "recommendation_prefilter_metadata": 22,
+    "recommendation_afterfilter_receipt": 22,
+    "lowest_result_null": 4,
+    "unsupported_model_class": 16
+  },
+  "model_families": {
+    "sdui_card": 22
+  },
+  "json_discriminators": {
+    "answer": 14,
+    "article": 4,
+    "pin": 4
+  },
+  "paired_receipt_count": 22,
+  "low_callback_first_count": 22,
+  "removed_records": [
+    {
+      "invocation": 12,
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "public_id": "2073363725558592353",
+      "json_discriminator": "article",
+      "exact_label_matches": [],
+      "low_callback_observed_first": true
+    },
+    {
+      "invocation": 92,
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "public_id": "2065947291077419459",
+      "json_discriminator": "article",
+      "exact_label_matches": [],
+      "low_callback_observed_first": true
+    },
+    {
+      "invocation": 100,
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "public_id": "2067559327318140462",
+      "json_discriminator": "article",
+      "exact_label_matches": [],
+      "low_callback_observed_first": true
+    },
+    {
+      "invocation": 108,
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "public_id": "2099539680370938900",
+      "json_discriminator": "article",
+      "exact_label_matches": [],
+      "low_callback_observed_first": true
+    }
+  ],
+  "map_probe_capped_count": 22,
+  "exact_paid_labels_seen_in_ui": false,
+  "upstream_premium_positive_verified": false,
+  "visible_premium_positive_verified": false,
+  "unsupported_classes": [
+    "com.zhihu.android.adbase.model.FeedAdvert",
+    "com.zhihu.android.api.model.BillboardEntryList",
+    "com.zhihu.android.api.model.RankFeed",
+    "com.zhihu.android.app.feed.ui.holder.hot.model.BillboardLanternList",
+    "com.zhihu.android.tornado.attr.TAttr",
+    "com.zhihu.android.tornado.attr.TCoverAttr",
+    "com.zhihu.android.tornado.attr.TIconAndTextAttr",
+    "com.zhihu.android.tornado.attr.TImageAttr",
+    "com.zhihu.android.tornado.attr.TTextViewAttr",
+    "com.zhihu.android.tornado.data.TDataImageCover",
+    "com.zhihu.android.tornado.data.TDataText",
+    "com.zhihu.android.tornado.data.TDataToast",
+    "com.zhihu.android.tornado.data.TDataVideoDuration",
+    "com.zhihu.android.tornado.data.TDataVideoScaleType",
+    "com.zhihu.android.tornado.data.TDataWaterMark",
+    "com.zhihu.android.tornado.event.TEventVisible"
+  ],
+  "classification_limit": "All matched removals were articles, not proof of premium-answer removal; missing premium positive remains unresolved.",
+  "label_legend": {
+    "0": "选自盐选专栏",
+    "1": "付费阅读内容仅盐选会员可评论"
+  },
+  "restoration": {
+    "exact_original_apk": true,
+    "all_48_preferences_unchanged": true,
+    "entire_scope_and_enabled_unchanged": true,
+    "ordinary_visible_load_checked": true,
+    "salt_label_visible": true,
+    "fresh_process_diagnostic_logs_absent": true
+  }
+}

@@ -1,0 +1,6 @@
+--- a/app/src/main/java/com/shatyuka/zhiliao/Hooks.java
++++ b/app/src/main/java/com/shatyuka/zhiliao/Hooks.java
+@@ -20,0 +21 @@
++import com.shatyuka.zhiliao.hooks.RecommendationObserver;
+@@ -41,0 +43 @@
++            new RecommendationObserver(),

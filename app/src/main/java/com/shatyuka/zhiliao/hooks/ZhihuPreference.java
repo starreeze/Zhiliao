@@ -31,7 +31,6 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
-import java.util.Random;
 
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XC_MethodReplacement;
@@ -40,12 +39,9 @@ import de.robv.android.xposed.XposedHelpers;
 
 @SuppressWarnings("deprecation")
 public class ZhihuPreference implements IHook {
-    final static String modulePackage = "com.shatyuka.zhiliao";
+    final static String modulePackage = "com.starreeze.betterzhiliao";
 
     private static Object preference_zhiliao;
-
-    private static int version_click = 0;
-    private static int author_click = 0;
 
     private static int settings_res_id = 0;
     private static int debug_res_id = 0;
@@ -390,11 +386,9 @@ public class ZhihuPreference implements IHook {
                 Object thisObject = param.thisObject;
                 Object preference_version = findPreference.invoke(thisObject, "preference_version");
                 Object preference_author = findPreference.invoke(thisObject, "preference_author");
-                Object preference_help = findPreference.invoke(thisObject, "preference_help");
-                Object preference_channel = findPreference.invoke(thisObject, "preference_channel");
-                Object preference_telegram = findPreference.invoke(thisObject, "preference_telegram");
                 Object preference_sourcecode = findPreference.invoke(thisObject, "preference_sourcecode");
-                Object preference_donate = findPreference.invoke(thisObject, "preference_donate");
+                Object preference_upstream = findPreference.invoke(thisObject, "preference_upstream");
+                Object preference_license = findPreference.invoke(thisObject, "preference_license");
                 Object preference_status = findPreference.invoke(thisObject, "preference_status");
                 Object switch_externlink = findPreference.invoke(thisObject, "switch_externlink");
                 Object switch_externlinkex = findPreference.invoke(thisObject, "switch_externlinkex");
@@ -440,14 +434,13 @@ public class ZhihuPreference implements IHook {
                 setOnPreferenceClickListener.invoke(switch_nextanswer, thisObject);
                 setOnPreferenceClickListener.invoke(preference_clean, thisObject);
                 setOnPreferenceClickListener.invoke(switch_autoclean, thisObject);
-                setOnPreferenceClickListener.invoke(preference_version, thisObject);
-                setOnPreferenceClickListener.invoke(preference_author, thisObject);
-                setOnPreferenceClickListener.invoke(preference_help, thisObject);
-                setOnPreferenceClickListener.invoke(preference_channel, thisObject);
-                setOnPreferenceClickListener.invoke(preference_telegram, thisObject);
                 setOnPreferenceClickListener.invoke(preference_sourcecode, thisObject);
-                setOnPreferenceClickListener.invoke(preference_donate, thisObject);
+                setOnPreferenceClickListener.invoke(preference_upstream, thisObject);
+                setOnPreferenceClickListener.invoke(preference_license, thisObject);
                 setOnPreferenceClickListener.invoke(switch_feedtophot, thisObject);
+                setOnPreferenceClickListener.invoke(findPreference.invoke(thisObject, "switch_filter_paid_recommend"), thisObject);
+                setOnPreferenceClickListener.invoke(findPreference.invoke(thisObject, "switch_filter_paid_question"), thisObject);
+                setOnPreferenceClickListener.invoke(findPreference.invoke(thisObject, "switch_filter_paid_browser"), thisObject);
                 setOnPreferenceClickListener.invoke(switch_minehybrid, thisObject);
 
                 String loaded_version = Helper.modRes.getString(R.string.app_version);
@@ -492,6 +485,8 @@ public class ZhihuPreference implements IHook {
                 setIcon.invoke(preference_status, Helper.modRes.getDrawable(R.drawable.ic_refresh));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_mainswitch"), Helper.modRes.getDrawable(R.drawable.ic_toggle_on));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_launchad"), Helper.modRes.getDrawable(R.drawable.ic_ad_units));
+                setIcon.invoke(findPreference.invoke(thisObject, "switch_floatad"), Helper.modRes.getDrawable(R.drawable.ic_ad_units));
+                setIcon.invoke(findPreference.invoke(thisObject, "switch_popupad"), Helper.modRes.getDrawable(R.drawable.ic_ad_units));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_feedad"), Helper.modRes.getDrawable(R.drawable.ic_table_rows));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_answerlistad"), Helper.modRes.getDrawable(R.drawable.ic_format_list));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_commentad"), Helper.modRes.getDrawable(R.drawable.ic_comment));
@@ -540,13 +535,14 @@ public class ZhihuPreference implements IHook {
                 setIcon.invoke(switch_autoclean, Helper.modRes.getDrawable(R.drawable.ic_auto_delete));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_silenceclean"), Helper.modRes.getDrawable(R.drawable.ic_notifications_off));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_hidetoast"), Helper.modRes.getDrawable(R.drawable.ic_tooltip));
+                setIcon.invoke(findPreference.invoke(thisObject, "switch_filter_paid_recommend"), Helper.modRes.getDrawable(R.drawable.ic_block));
+                setIcon.invoke(findPreference.invoke(thisObject, "switch_filter_paid_question"), Helper.modRes.getDrawable(R.drawable.ic_block));
+                setIcon.invoke(findPreference.invoke(thisObject, "switch_filter_paid_browser"), Helper.modRes.getDrawable(R.drawable.ic_block));
                 setIcon.invoke(preference_version, Helper.modRes.getDrawable(R.drawable.ic_info));
                 setIcon.invoke(preference_author, Helper.modRes.getDrawable(R.drawable.ic_person));
-                setIcon.invoke(preference_help, Helper.modRes.getDrawable(R.drawable.ic_help));
-                setIcon.invoke(preference_channel, Helper.modRes.getDrawable(R.drawable.ic_rss_feed));
-                setIcon.invoke(preference_telegram, Helper.modRes.getDrawable(R.drawable.ic_telegram));
                 setIcon.invoke(preference_sourcecode, Helper.modRes.getDrawable(R.drawable.ic_github));
-                setIcon.invoke(preference_donate, Helper.modRes.getDrawable(R.drawable.ic_monetization));
+                setIcon.invoke(preference_upstream, Helper.modRes.getDrawable(R.drawable.ic_github));
+                setIcon.invoke(preference_license, Helper.modRes.getDrawable(R.drawable.ic_info));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_feedtophot"), Helper.modRes.getDrawable(R.drawable.ic_whatshot));
                 setIcon.invoke(findPreference.invoke(thisObject, "switch_minehybrid"), Helper.modRes.getDrawable(R.drawable.ic_viewcard));
 
@@ -571,44 +567,20 @@ public class ZhihuPreference implements IHook {
                     case "preference_status":
                         System.exit(0);
                         break;
-                    case "preference_version":
-                        version_click++;
-                        if (version_click == 5) {
-                            Helper.toast("点我次数再多，更新也不会变快哦", Toast.LENGTH_SHORT);
-                            version_click = 0;
-                        }
-                        break;
-                    case "preference_author":
-                        author_click++;
-                        if (author_click == 5) {
-                            Helper.toast(Helper.modRes.getStringArray(R.array.click_author)[new Random().nextInt(4)], Toast.LENGTH_SHORT);
-                            author_click = 0;
-                        }
-                        break;
-                    case "preference_help":
-                        Uri uri_help = Uri.parse("https://github.com/shatyuka/Zhiliao/wiki");
-                        Intent intent_help = new Intent(Intent.ACTION_VIEW, uri_help);
-                        ((Context) getContext.invoke(param.thisObject)).startActivity(intent_help);
-                        break;
-                    case "preference_channel":
-                        Uri uri_channel = Uri.parse("https://t.me/zhiliao");
-                        Intent intent_channel = new Intent(Intent.ACTION_VIEW, uri_channel);
-                        ((Context) getContext.invoke(param.thisObject)).startActivity(intent_channel);
-                        break;
-                    case "preference_telegram":
-                        Uri uri_telegram = Uri.parse("https://t.me/joinchat/OibCWxbdCMkJ2fG8J1DpQQ");
-                        Intent intent_telegram = new Intent(Intent.ACTION_VIEW, uri_telegram);
-                        ((Context) getContext.invoke(param.thisObject)).startActivity(intent_telegram);
-                        break;
                     case "preference_sourcecode":
                         Uri uri_sourcecode = Uri.parse("https://github.com/starreeze/Zhiliao");
                         Intent intent_sourcecode = new Intent(Intent.ACTION_VIEW, uri_sourcecode);
                         ((Context) getContext.invoke(param.thisObject)).startActivity(intent_sourcecode);
                         break;
-                    case "preference_donate":
-                        Uri uri_donate = Uri.parse("https://github.com/shatyuka/Zhiliao/wiki/Donate");
-                        Intent intent_donate = new Intent(Intent.ACTION_VIEW, uri_donate);
-                        ((Context) getContext.invoke(param.thisObject)).startActivity(intent_donate);
+                    case "preference_upstream":
+                        Uri uri_upstream = Uri.parse("https://github.com/shatyuka/Zhiliao");
+                        Intent intent_upstream = new Intent(Intent.ACTION_VIEW, uri_upstream);
+                        ((Context) getContext.invoke(param.thisObject)).startActivity(intent_upstream);
+                        break;
+                    case "preference_license":
+                        Uri uri_license = Uri.parse("https://github.com/starreeze/Zhiliao/blob/master/LICENSE.md");
+                        Intent intent_license = new Intent(Intent.ACTION_VIEW, uri_license);
+                        ((Context) getContext.invoke(param.thisObject)).startActivity(intent_license);
                         break;
                     case "switch_externlink":
                         Object switch_externlinkex = findPreference.invoke(param.thisObject, "switch_externlinkex");
@@ -644,6 +616,9 @@ public class ZhihuPreference implements IHook {
                     case "switch_nipple":
                     case "switch_autoclean":
                     case "switch_feedtophot":
+                    case "switch_filter_paid_recommend":
+                    case "switch_filter_paid_question":
+                    case "switch_filter_paid_browser":
                     case "switch_minehybrid":
                         Helper.toast("重启知乎生效", Toast.LENGTH_SHORT);
                         break;

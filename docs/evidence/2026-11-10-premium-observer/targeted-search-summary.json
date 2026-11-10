@@ -1,0 +1,43 @@
+{
+  "actual_query_count": 2,
+  "queries": [
+    {
+      "query_number": 1,
+      "query_value_retained": false,
+      "activity": "com.zhihu.android.app.SearchResultActivity",
+      "callback_family_counts": {
+        "sdui_card": 11
+      },
+      "target_public_id_observed": false,
+      "exact_paid_label_observed_in_callbacks": false
+    },
+    {
+      "query_number": 2,
+      "query_value_retained": false,
+      "activity": "com.zhihu.android.app.SearchResultActivity",
+      "callback_family_counts": {
+        "sdui_card": 10
+      },
+      "target_public_id_observed": false,
+      "exact_paid_label_observed_in_callbacks": false
+    }
+  ],
+  "ui_component_evidence": {
+    "com.horcrux.svg.SvgView": 7,
+    "com.horcrux.svg.GroupView": 7,
+    "com.horcrux.svg.PathView": 7
+  },
+  "webview_count": 0,
+  "rendered_entry_public_id_confirmed": false,
+  "provenance_limit": "Global registry callbacks may be startup/background prefetch; they are not identified as actual search-result data. No premium-absence or home-coverage inference.",
+  "further_queries_stopped": true,
+  "restoration": {
+    "exact_original_apk": true,
+    "all_48_settings_preserved": true,
+    "entire_scope_and_enabled_preserved": true,
+    "ordinary_visible_load_verified": true,
+    "phone_diagnostic_files_removed": true,
+    "secure_locked": true
+  },
+  "raw_body_auth_or_query_values_saved": false
+}

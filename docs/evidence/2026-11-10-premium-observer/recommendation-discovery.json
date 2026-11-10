@@ -1,0 +1,155 @@
+{
+  "ui_screens": 4,
+  "card_records_including_prefetch": 21,
+  "paid_positive_verified": false,
+  "exact_paid_label_seen_in_bounded_ui": false,
+  "records": [
+    {
+      "answer_id": "2092864668574470575",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2103164948335671198",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2062126659248117418",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2053496323329078810",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "1944199903023698621",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2028640324738629950",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2096969070797236104",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2103112452149876557",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2102904764526863217",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2103248055868904728",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "pin",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2103429207174992163",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "pin",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2101625105730295068",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2103227426704716004",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2031027968575795377",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2043442563957380066",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "pin",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "1971107292993810776",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2102144484314292787",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2103426230515136458",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "pin",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2083205701606949181",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "pin",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2103263507143827584",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "pin",
+      "business_type": null,
+      "sub_type": null
+    },
+    {
+      "answer_id": "2103296295700001012",
+      "model_class": "com.zhihu.android.ui.shared.sdui.model.Card",
+      "content_type": "answer",
+      "business_type": null,
+      "sub_type": null
+    }
+  ]
+}

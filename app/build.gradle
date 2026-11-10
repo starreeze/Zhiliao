@@ -4,7 +4,7 @@ android {
     namespace = 'com.shatyuka.zhiliao'
     compileSdkVersion 36
     defaultConfig {
-        applicationId "com.shatyuka.zhiliao"
+        applicationId "com.starreeze.betterzhiliao"
         minSdkVersion 26
         targetSdkVersion 36
         ndkVersion = "28.2.13676358"

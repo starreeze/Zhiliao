@@ -19,11 +19,14 @@ import com.shatyuka.zhiliao.hooks.Horizontal;
 import com.shatyuka.zhiliao.hooks.HotBanner;
 import com.shatyuka.zhiliao.hooks.IHook;
 import com.shatyuka.zhiliao.hooks.LaunchAd;
+import com.shatyuka.zhiliao.hooks.FloatingAd;
+import com.shatyuka.zhiliao.hooks.PopupAd;
 import com.shatyuka.zhiliao.hooks.LiveButton;
 import com.shatyuka.zhiliao.hooks.MineHybridView;
 import com.shatyuka.zhiliao.hooks.NavButton;
 import com.shatyuka.zhiliao.hooks.NavRes;
 import com.shatyuka.zhiliao.hooks.NextAnswer;
+import com.shatyuka.zhiliao.hooks.PremiumFilter;
 import com.shatyuka.zhiliao.hooks.FullScreen;
 import com.shatyuka.zhiliao.hooks.RedDot;
 import com.shatyuka.zhiliao.hooks.SearchAd;
@@ -41,7 +44,10 @@ public class Hooks {
     static final IHook[] hooks = {
             new ZhihuPreference(),
             new LaunchAd(),
+            new FloatingAd(),
+            new PopupAd(),
             new CustomFilter(),
+            new PremiumFilter(),
             new FeedAd(),
             new AnswerListAd(),
             new CommentAd(),

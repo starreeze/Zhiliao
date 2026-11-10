@@ -1,0 +1,38 @@
+{"time": "2026-11-10T14:09:48.839", "event": "[BetterZhiliao] floating image ad hooks installed"}
+{"time": "2026-11-10T14:09:48.839", "event": "[BetterZhiliao] floating pendant ad hook installed"}
+{"time": "2026-11-10T14:09:48.840", "event": "[BetterZhiliao] startup video popup ad hook installed"}
+{"time": "2026-11-10T14:09:48.849", "event": "[BetterZhiliao] premium recommend hook installed"}
+{"time": "2026-11-10T14:09:48.856", "event": "[BetterZhiliao] premium question hook installed"}
+{"time": "2026-11-10T14:09:48.859", "event": "[BetterZhiliao] premium browser hook installed"}
+{"time": "2026-11-10T14:11:42.236", "event": "[BetterZhiliao] floating image ad hooks installed"}
+{"time": "2026-11-10T14:11:42.236", "event": "[BetterZhiliao] floating pendant ad hook installed"}
+{"time": "2026-11-10T14:11:42.237", "event": "[BetterZhiliao] startup video popup ad hook installed"}
+{"time": "2026-11-10T14:11:42.244", "event": "[BetterZhiliao] premium recommend hook installed"}
+{"time": "2026-11-10T14:11:42.249", "event": "[BetterZhiliao] premium question hook installed"}
+{"time": "2026-11-10T14:11:42.256", "event": "[BetterZhiliao] premium browser hook installed"}
+{"time": "2026-11-10T14:16:01.662", "event": "[BetterZhiliao] floating image ad hooks installed"}
+{"time": "2026-11-10T14:16:01.662", "event": "[BetterZhiliao] floating pendant ad hook installed"}
+{"time": "2026-11-10T14:16:01.663", "event": "[BetterZhiliao] startup video popup ad hook installed"}
+{"time": "2026-11-10T14:16:01.672", "event": "[BetterZhiliao] premium recommend hook installed"}
+{"time": "2026-11-10T14:16:01.676", "event": "[BetterZhiliao] premium question hook installed"}
+{"time": "2026-11-10T14:16:01.682", "event": "[BetterZhiliao] premium browser hook installed"}
+{"time": "2026-11-10T14:16:43.595", "event": "[BetterZhiliao] floating image ad hooks installed"}
+{"time": "2026-11-10T14:16:43.595", "event": "[BetterZhiliao] floating pendant ad hook installed"}
+{"time": "2026-11-10T14:16:43.599", "event": "[BetterZhiliao] startup video popup ad hook installed"}
+{"time": "2026-11-10T14:16:43.612", "event": "[BetterZhiliao] premium recommend hook installed"}
+{"time": "2026-11-10T14:16:43.622", "event": "[BetterZhiliao] premium question hook installed"}
+{"time": "2026-11-10T14:16:43.669", "event": "[BetterZhiliao] premium browser hook installed"}
+{"time": "2026-11-10T14:17:04.398", "event": "[AdRuntimeProbe] private sentinel probe installed"}
+{"time": "2026-11-10T14:17:04.688", "event": "[AdRuntimeProbe] real controller captured"}
+{"time": "2026-11-10T14:17:08.545", "event": "[AdRuntimeProbe] task=status controller=true context=true container=false config=false advert=false hostReady=true containerAttached=false videoReady=false imageReady=false main=true floating=true popup=true"}
+{"time": "2026-11-10T14:17:43.728", "event": "[AdRuntimeProbe] task=status controller=true context=true container=false config=false advert=false hostReady=true containerAttached=false videoReady=false imageReady=false main=true floating=true popup=true"}
+{"time": "2026-11-10T14:18:24.957", "event": "[AdRuntimeProbe] task=status controller=true context=true container=false config=false advert=false hostReady=true containerAttached=false videoReady=false imageReady=false main=true floating=true popup=true"}
+{"time": "2026-11-10T14:20:12.480", "event": "[BetterZhiliao] premium question removed=1"}
+{"time": "2026-11-10T14:20:13.258", "event": "[BetterZhiliao] premium question removed=2"}
+{"time": "2026-11-10T14:23:50.323", "event": "[BetterZhiliao] premium browser removed=1"}
+{"time": "2026-11-10T14:31:53.306", "event": "[BetterZhiliao] floating image ad hooks installed"}
+{"time": "2026-11-10T14:31:53.306", "event": "[BetterZhiliao] floating pendant ad hook installed"}
+{"time": "2026-11-10T14:31:53.309", "event": "[BetterZhiliao] startup video popup ad hook installed"}
+{"time": "2026-11-10T14:31:53.331", "event": "[BetterZhiliao] premium recommend hook installed"}
+{"time": "2026-11-10T14:31:53.343", "event": "[BetterZhiliao] premium question hook installed"}
+{"time": "2026-11-10T14:31:53.358", "event": "[BetterZhiliao] premium browser hook installed"}

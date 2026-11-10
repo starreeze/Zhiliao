@@ -30,6 +30,18 @@
         <com.zhihu.android.app.ui.widget.SwitchPreference
             android:defaultValue="true"
             android:dependency="switch_mainswitch"
+            android:key="switch_floatad"
+            android:title="去悬浮广告"
+            android:summary="去除首页悬浮图片广告和推广视频结束后的广告挂件"/>
+        <com.zhihu.android.app.ui.widget.SwitchPreference
+            android:defaultValue="true"
+            android:dependency="switch_mainswitch"
+            android:key="switch_popupad"
+            android:title="去启动弹窗广告"
+            android:summary="去除启动后覆盖首页的透明视频推广"/>
+        <com.zhihu.android.app.ui.widget.SwitchPreference
+            android:defaultValue="true"
+            android:dependency="switch_mainswitch"
             android:key="switch_feedad"
             android:title="去信息流广告"
             android:summary="去除信息流内夹杂的广告"/>
@@ -272,6 +284,24 @@
             android:summary="多余的按钮"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="自定义过滤" android:key="category_filter">
+        <com.zhihu.android.app.ui.widget.SwitchPreference
+            android:defaultValue="false"
+            android:dependency="switch_mainswitch"
+            android:key="switch_filter_paid_recommend"
+            android:title="过滤推荐流盐选回答"
+            android:summary="仅过滤有明确付费标记的回答，部分推荐卡片可能无法识别；重启知乎生效"/>
+        <com.zhihu.android.app.ui.widget.SwitchPreference
+            android:defaultValue="false"
+            android:dependency="switch_mainswitch"
+            android:key="switch_filter_paid_question"
+            android:title="过滤问题回答列表盐选回答"
+            android:summary="过滤问题下回答列表中的盐选、会员付费回答；重启知乎生效"/>
+        <com.zhihu.android.app.ui.widget.SwitchPreference
+            android:defaultValue="false"
+            android:dependency="switch_mainswitch"
+            android:key="switch_filter_paid_browser"
+            android:title="过滤回答浏览流盐选回答"
+            android:summary="保留主动打开的回答，仅过滤后续浏览流中的盐选、会员付费回答；重启知乎生效"/>
         <EditTextPreference
             android:dependency="switch_mainswitch"
             android:key="edit_title"
@@ -347,24 +377,16 @@
             android:title="原作者"
             android:summary="Shatyuka"/>
         <Preference
-            android:key="preference_help"
-            android:title="帮助"
-            android:summary="点我获取常见问题帮助"/>
-        <Preference
-            android:key="preference_channel"
-            android:title="上游 TG 频道"
-            android:summary="原项目的订阅频道"/>
-        <Preference
-            android:key="preference_telegram"
-            android:title="上游 TG 群"
-            android:summary="原项目的交流群"/>
-        <Preference
             android:key="preference_sourcecode"
-            android:title="源代码"
-            android:summary="点个Star吧"/>
+            android:title="BetterZhiliao 源代码"
+            android:summary="本分支的源代码与修改记录"/>
         <Preference
-            android:key="preference_donate"
-            android:title="支持原作者"
-            android:summary="上游项目的捐赠说明"/>
+            android:key="preference_upstream"
+            android:title="原项目"
+            android:summary="Shatyuka/Zhiliao"/>
+        <Preference
+            android:key="preference_license"
+            android:title="开源许可证"
+            android:summary="基于 Shatyuka/Zhiliao 修改（2026-11-10），遵循 GPL-3.0；无任何担保，可按许可证再分发。点击查看完整许可证。"/>
     </PreferenceCategory>
 </PreferenceScreen>

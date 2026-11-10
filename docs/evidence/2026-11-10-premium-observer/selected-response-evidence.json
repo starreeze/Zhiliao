@@ -1,0 +1,1692 @@
+{
+  "schema": "sanitized_selected_native_response",
+  "provenance": [
+    {
+      "event": "private_capture_saved",
+      "answer_id": "1977823141666501380",
+      "status": 200,
+      "bytes": 35337,
+      "sequence": 16
+    },
+    {
+      "event": "response_structure",
+      "shape_probe_capped": false,
+      "endpoint": "answer_detail",
+      "requested_fixture_id": "1977823141666501380",
+      "status": 200,
+      "peek_bytes": 35588,
+      "probe_capped": false,
+      "declared_body_length": -1,
+      "network_response_present": true,
+      "cache_response_present": false,
+      "sequence": 17
+    }
+  ],
+  "alternative_body_containers": {
+    "structured_content_vip": {
+      "kind": "NoneType",
+      "length": null
+    },
+    "video": {
+      "kind": "NoneType",
+      "length": null
+    },
+    "thumbnail": {
+      "kind": "str",
+      "length": 0
+    },
+    "catalog": {
+      "kind": "list",
+      "length": 0
+    }
+  },
+  "normalized_excerpt_core_chars": 193,
+  "normalized_excerpt_core_is_story_prefix": true,
+  "selected_answer_id": "1977823141666501380",
+  "representation": "parsed_json_reserialized_snapshot",
+  "parsed_snapshot_bytes": 35337,
+  "received_peek_bytes": [
+    35588
+  ],
+  "root_schema": [
+    {
+      "field": "attached_info",
+      "kind": "str",
+      "length": 184
+    },
+    {
+      "field": "author",
+      "kind": "dict",
+      "length": 10,
+      "keys": [
+        "avatar",
+        "description",
+        "follow_status",
+        "fullname",
+        "gender",
+        "id",
+        "identity_icons",
+        "is_org",
+        "type",
+        "url_token"
+      ]
+    },
+    {
+      "field": "bar_plugins_flip_time",
+      "kind": "int"
+    },
+    {
+      "field": "biz_type_list",
+      "kind": "list",
+      "length": 2
+    },
+    {
+      "field": "business_type",
+      "kind": "str",
+      "length": 4
+    },
+    {
+      "field": "can_copy",
+      "kind": "bool"
+    },
+    {
+      "field": "catalog",
+      "kind": "list",
+      "length": 0
+    },
+    {
+      "field": "comment_config",
+      "kind": "dict",
+      "length": 5,
+      "keys": [
+        "can_reply",
+        "can_segment_reply",
+        "comment_identities",
+        "place_holder",
+        "place_holder_strategy"
+      ]
+    },
+    {
+      "field": "content_end_info",
+      "kind": "dict",
+      "length": 4,
+      "keys": [
+        "create_time_text",
+        "ip_info",
+        "reshipment_settings",
+        "update_time_text"
+      ]
+    },
+    {
+      "field": "endorsement",
+      "kind": "NoneType"
+    },
+    {
+      "field": "er_tips",
+      "kind": "dict",
+      "length": 2,
+      "keys": [
+        "is_load_er_cache",
+        "load_http_data"
+      ]
+    },
+    {
+      "field": "excerpt",
+      "kind": "str",
+      "length": 214
+    },
+    {
+      "field": "has_publishing_draft",
+      "kind": "bool"
+    },
+    {
+      "field": "header",
+      "kind": "dict",
+      "length": 6,
+      "keys": [
+        "action_url",
+        "bold",
+        "sub_title",
+        "text",
+        "text_color",
+        "text_size"
+      ]
+    },
+    {
+      "field": "id",
+      "kind": "str",
+      "length": 19
+    },
+    {
+      "field": "interaction_bar_plugins",
+      "kind": "list",
+      "length": 1
+    },
+    {
+      "field": "is_hot_content",
+      "kind": "bool"
+    },
+    {
+      "field": "is_mine",
+      "kind": "bool"
+    },
+    {
+      "field": "is_topping",
+      "kind": "bool"
+    },
+    {
+      "field": "podcast_audio_enter",
+      "kind": "dict",
+      "length": 5,
+      "keys": [
+        "action_url",
+        "sub_type",
+        "text",
+        "text_color",
+        "text_size"
+      ]
+    },
+    {
+      "field": "question",
+      "kind": "dict",
+      "length": 11,
+      "keys": [
+        "answer_count",
+        "followers_count",
+        "id",
+        "mute_info",
+        "question_type",
+        "reaction_instruction",
+        "relationship",
+        "review_info",
+        "status",
+        "title",
+        "url"
+      ]
+    },
+    {
+      "field": "reaction",
+      "kind": "dict",
+      "length": 4,
+      "keys": [
+        "image_reactions",
+        "relation",
+        "share_count_string",
+        "statistics"
+      ]
+    },
+    {
+      "field": "reaction_instruction",
+      "kind": "dict",
+      "length": 0,
+      "keys": []
+    },
+    {
+      "field": "relationship_tips",
+      "kind": "dict",
+      "length": 7,
+      "keys": [
+        "action_url",
+        "is_bold",
+        "right_icon",
+        "text",
+        "text_color",
+        "text_size",
+        "type"
+      ]
+    },
+    {
+      "field": "reward_info",
+      "kind": "dict",
+      "length": 5,
+      "keys": [
+        "can_open_reward",
+        "is_rewardable",
+        "reward_member_count",
+        "reward_total_money",
+        "tagline"
+      ]
+    },
+    {
+      "field": "search_word",
+      "kind": "dict",
+      "length": 1,
+      "keys": [
+        "queries"
+      ]
+    },
+    {
+      "field": "settings",
+      "kind": "dict",
+      "length": 1,
+      "keys": [
+        "table_of_contents"
+      ]
+    },
+    {
+      "field": "structured_content",
+      "kind": "dict",
+      "length": 2,
+      "keys": [
+        "paging",
+        "segments"
+      ]
+    },
+    {
+      "field": "structured_content_vip",
+      "kind": "NoneType"
+    },
+    {
+      "field": "third_business",
+      "kind": "dict",
+      "length": 3,
+      "keys": [
+        "comment",
+        "related_queries",
+        "ring"
+      ]
+    },
+    {
+      "field": "thumbnail",
+      "kind": "str",
+      "length": 0
+    },
+    {
+      "field": "type",
+      "kind": "str",
+      "length": 6
+    },
+    {
+      "field": "video",
+      "kind": "NoneType"
+    }
+  ],
+  "field_role_note": "Path categories only; actual fields and lengths require interpretation with renderer/schema evidence.",
+  "segment_count": 158,
+  "segment_types": {
+    "card:km-paid-answer-header": 1,
+    "paragraph": 156,
+    "card:km-paid-answer-tail-truncate": 1
+  },
+  "recognized_story_paragraphs": 156,
+  "recognized_story_chars": 2787,
+  "anchor_chars": 28,
+  "anchor_matches": 1,
+  "anchor_at_story_end": true,
+  "story_chars_after_anchor": 0,
+  "last_segment_type": "card",
+  "last_card_type": "km-paid-answer-tail-truncate",
+  "excerpt_chars": 214,
+  "excerpt_fully_in_story": false,
+  "card_summaries": [
+    {
+      "index": 0,
+      "card_type": "km-paid-answer-header",
+      "card_keys": [
+        "card_type",
+        "extra_info",
+        "id"
+      ],
+      "extra_info_keys": [
+        "business_id",
+        "sku_id",
+        "business_type",
+        "business_cn_name",
+        "title_line",
+        "is_vip_free",
+        "vip_type",
+        "normal_head_line",
+        "vip_head_line",
+        "scene",
+        "copyright",
+        "za",
+        "style",
+        "content_token",
+        "content_type"
+      ],
+      "extra_info_chars": 976
+    },
+    {
+      "index": 157,
+      "card_type": "km-paid-answer-tail-truncate",
+      "card_keys": [
+        "card_type",
+        "extra_info",
+        "id"
+      ],
+      "extra_info_keys": [
+        "text",
+        "url",
+        "img_day_url",
+        "img_night_url",
+        "business_id",
+        "business_type",
+        "answer_token",
+        "authentication_result",
+        "scene",
+        "content_token",
+        "content_type",
+        "dynamics_card",
+        "style"
+      ],
+      "extra_info_chars": 936
+    }
+  ],
+  "json_strings_parsed": [
+    {
+      "path": "$.structured_content.paging",
+      "chars": 287,
+      "decoded_kind": "dict",
+      "decoded_keys": [
+        "is_end",
+        "next",
+        "is_start",
+        "previous",
+        "totals"
+      ]
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info",
+      "chars": 976,
+      "decoded_kind": "dict",
+      "decoded_keys": [
+        "business_id",
+        "sku_id",
+        "business_type",
+        "business_cn_name",
+        "title_line",
+        "is_vip_free",
+        "vip_type",
+        "normal_head_line",
+        "vip_head_line",
+        "scene",
+        "copyright",
+        "za",
+        "style",
+        "content_token",
+        "content_type"
+      ]
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info",
+      "chars": 936,
+      "decoded_kind": "dict",
+      "decoded_keys": [
+        "text",
+        "url",
+        "img_day_url",
+        "img_night_url",
+        "business_id",
+        "business_type",
+        "answer_token",
+        "authentication_result",
+        "scene",
+        "content_token",
+        "content_type",
+        "dynamics_card",
+        "style"
+      ]
+    }
+  ],
+  "json_like_parse_failures": [],
+  "semantic_values": [
+    {
+      "path": "$.business_type",
+      "value": "paid"
+    },
+    {
+      "path": "$.comment_config.can_reply",
+      "value": false
+    },
+    {
+      "path": "$.podcast_audio_enter.sub_type",
+      "value": "svip"
+    },
+    {
+      "path": "$.structured_content.paging::<json>.is_end",
+      "value": true
+    },
+    {
+      "path": "$.structured_content.segments[*].card.card_type",
+      "value": "km-paid-answer-header"
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.business_type",
+      "value": "paid_column"
+    },
+    {
+      "path": "$.structured_content.segments[*].card.card_type",
+      "value": "km-paid-answer-tail-truncate"
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.business_type",
+      "value": "paid_column"
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.authentication_result",
+      "value": true
+    }
+  ],
+  "known_marker_locations": [
+    {
+      "path": "$.comment_config.place_holder",
+      "known_gate_id": 2,
+      "occurrences": 1
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info",
+      "known_gate_id": 0,
+      "occurrences": 1
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info",
+      "known_gate_id": 1,
+      "occurrences": 1
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.text",
+      "known_gate_id": 0,
+      "occurrences": 1
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.button_text",
+      "known_gate_id": 1,
+      "occurrences": 1
+    },
+    {
+      "path": "$.third_business.comment.place_holder",
+      "known_gate_id": 2,
+      "occurrences": 1
+    }
+  ],
+  "opaque_or_base64_strings": [
+    {
+      "path": "$.attached_info",
+      "encoded_chars": 184,
+      "decoded_bytes": 138,
+      "compression": null,
+      "decoded_utf8": false
+    },
+    {
+      "path": "$.author.id",
+      "encoded_chars": 32,
+      "decoded_bytes": 24,
+      "compression": null,
+      "decoded_utf8": false
+    },
+    {
+      "path": "$.structured_content.segments[*].paragraph.marks[*].entity_word.attach_info_bytes",
+      "encoded_chars": 460,
+      "decoded_bytes": 343,
+      "compression": null,
+      "decoded_utf8": false
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].attached_info",
+      "encoded_chars": 216,
+      "decoded_bytes": 160,
+      "compression": null,
+      "decoded_utf8": false
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].attached_info",
+      "encoded_chars": 244,
+      "decoded_bytes": 181,
+      "compression": null,
+      "decoded_utf8": false
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].attached_info",
+      "encoded_chars": 236,
+      "decoded_bytes": 177,
+      "compression": null,
+      "decoded_utf8": false
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].attached_info",
+      "encoded_chars": 236,
+      "decoded_bytes": 175,
+      "compression": null,
+      "decoded_utf8": false
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].attached_info",
+      "encoded_chars": 232,
+      "decoded_bytes": 174,
+      "compression": null,
+      "decoded_utf8": false
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].attached_info",
+      "encoded_chars": 228,
+      "decoded_bytes": 169,
+      "compression": null,
+      "decoded_utf8": false
+    }
+  ],
+  "all_string_field_inventory": [
+    {
+      "path": "$.attached_info",
+      "count": 1,
+      "min_chars": 184,
+      "max_chars": 184,
+      "total_chars": 184,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.avatar.avatar_image.day",
+      "count": 1,
+      "min_chars": 97,
+      "max_chars": 97,
+      "total_chars": 97,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.avatar.avatar_image.jump_url",
+      "count": 1,
+      "min_chars": 38,
+      "max_chars": 38,
+      "total_chars": 38,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.avatar.avatar_image.night",
+      "count": 1,
+      "min_chars": 97,
+      "max_chars": 97,
+      "total_chars": 97,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.description",
+      "count": 1,
+      "min_chars": 9,
+      "max_chars": 9,
+      "total_chars": 9,
+      "chinese_chars": 8
+    },
+    {
+      "path": "$.author.follow_status",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.fullname",
+      "count": 1,
+      "min_chars": 3,
+      "max_chars": 3,
+      "total_chars": 3,
+      "chinese_chars": 3
+    },
+    {
+      "path": "$.author.id",
+      "count": 1,
+      "min_chars": 32,
+      "max_chars": 32,
+      "total_chars": 32,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.identity_icons[*].day",
+      "count": 2,
+      "min_chars": 83,
+      "max_chars": 83,
+      "total_chars": 166,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.identity_icons[*].jump_url",
+      "count": 2,
+      "min_chars": 37,
+      "max_chars": 277,
+      "total_chars": 314,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.identity_icons[*].night",
+      "count": 2,
+      "min_chars": 83,
+      "max_chars": 83,
+      "total_chars": 166,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.type",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.author.url_token",
+      "count": 1,
+      "min_chars": 10,
+      "max_chars": 10,
+      "total_chars": 10,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.biz_type_list[*]",
+      "count": 2,
+      "min_chars": 6,
+      "max_chars": 10,
+      "total_chars": 16,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.business_type",
+      "count": 1,
+      "min_chars": 4,
+      "max_chars": 4,
+      "total_chars": 4,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.comment_config.place_holder",
+      "count": 1,
+      "min_chars": 14,
+      "max_chars": 14,
+      "total_chars": 14,
+      "chinese_chars": 14
+    },
+    {
+      "path": "$.comment_config.place_holder_strategy",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.content_end_info.create_time_text",
+      "count": 1,
+      "min_chars": 16,
+      "max_chars": 16,
+      "total_chars": 16,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.content_end_info.ip_info",
+      "count": 1,
+      "min_chars": 2,
+      "max_chars": 2,
+      "total_chars": 2,
+      "chinese_chars": 2
+    },
+    {
+      "path": "$.content_end_info.reshipment_settings",
+      "count": 1,
+      "min_chars": 4,
+      "max_chars": 4,
+      "total_chars": 4,
+      "chinese_chars": 4
+    },
+    {
+      "path": "$.content_end_info.update_time_text",
+      "count": 1,
+      "min_chars": 20,
+      "max_chars": 20,
+      "total_chars": 20,
+      "chinese_chars": 3
+    },
+    {
+      "path": "$.excerpt",
+      "count": 1,
+      "min_chars": 214,
+      "max_chars": 214,
+      "total_chars": 214,
+      "chinese_chars": 155
+    },
+    {
+      "path": "$.header.action_url",
+      "count": 1,
+      "min_chars": 50,
+      "max_chars": 50,
+      "total_chars": 50,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.header.sub_title.action_url",
+      "count": 1,
+      "min_chars": 50,
+      "max_chars": 50,
+      "total_chars": 50,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.header.sub_title.text",
+      "count": 1,
+      "min_chars": 23,
+      "max_chars": 23,
+      "total_chars": 23,
+      "chinese_chars": 8
+    },
+    {
+      "path": "$.header.sub_title.text_color",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.header.text",
+      "count": 1,
+      "min_chars": 10,
+      "max_chars": 10,
+      "total_chars": 10,
+      "chinese_chars": 9
+    },
+    {
+      "path": "$.header.text_color",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.id",
+      "count": 1,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 19,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.interaction_bar_plugins[*].type",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.podcast_audio_enter.action_url",
+      "count": 1,
+      "min_chars": 121,
+      "max_chars": 121,
+      "total_chars": 121,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.podcast_audio_enter.sub_type",
+      "count": 1,
+      "min_chars": 4,
+      "max_chars": 4,
+      "total_chars": 4,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.podcast_audio_enter.text",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 3
+    },
+    {
+      "path": "$.podcast_audio_enter.text_color",
+      "count": 1,
+      "min_chars": 8,
+      "max_chars": 8,
+      "total_chars": 8,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.question.id",
+      "count": 1,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 19,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.question.mute_info.type",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.question.question_type",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.question.review_info.edit_tips",
+      "count": 1,
+      "min_chars": 18,
+      "max_chars": 18,
+      "total_chars": 18,
+      "chinese_chars": 17
+    },
+    {
+      "path": "$.question.review_info.tips",
+      "count": 1,
+      "min_chars": 18,
+      "max_chars": 18,
+      "total_chars": 18,
+      "chinese_chars": 17
+    },
+    {
+      "path": "$.question.review_info.type",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.question.title",
+      "count": 1,
+      "min_chars": 10,
+      "max_chars": 10,
+      "total_chars": 10,
+      "chinese_chars": 9
+    },
+    {
+      "path": "$.question.url",
+      "count": 1,
+      "min_chars": 51,
+      "max_chars": 51,
+      "total_chars": 51,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.reaction.relation.vote",
+      "count": 1,
+      "min_chars": 7,
+      "max_chars": 7,
+      "total_chars": 7,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.reaction.relation.vote_next_step",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.reaction.share_count_string",
+      "count": 1,
+      "min_chars": 2,
+      "max_chars": 2,
+      "total_chars": 2,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.relationship_tips.action_url",
+      "count": 1,
+      "min_chars": 124,
+      "max_chars": 124,
+      "total_chars": 124,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.relationship_tips.right_icon.day",
+      "count": 1,
+      "min_chars": 71,
+      "max_chars": 71,
+      "total_chars": 71,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.relationship_tips.right_icon.night",
+      "count": 1,
+      "min_chars": 71,
+      "max_chars": 71,
+      "total_chars": 71,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.relationship_tips.text",
+      "count": 1,
+      "min_chars": 11,
+      "max_chars": 11,
+      "total_chars": 11,
+      "chinese_chars": 7
+    },
+    {
+      "path": "$.relationship_tips.text_color",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.relationship_tips.type",
+      "count": 1,
+      "min_chars": 16,
+      "max_chars": 16,
+      "total_chars": 16,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.reward_info.tagline",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.search_word.queries[*].attached_info",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.search_word.queries[*].display_query",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.search_word.queries[*].id",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.search_word.queries[*].link_url",
+      "count": 1,
+      "min_chars": 82,
+      "max_chars": 82,
+      "total_chars": 82,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.search_word.queries[*].real_query",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.paging",
+      "count": 1,
+      "min_chars": 287,
+      "max_chars": 287,
+      "total_chars": 287,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.paging::<json>.next",
+      "count": 1,
+      "min_chars": 101,
+      "max_chars": 101,
+      "total_chars": 101,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.paging::<json>.previous",
+      "count": 1,
+      "min_chars": 100,
+      "max_chars": 100,
+      "total_chars": 100,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.card_type",
+      "count": 2,
+      "min_chars": 21,
+      "max_chars": 28,
+      "total_chars": 49,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info",
+      "count": 2,
+      "min_chars": 936,
+      "max_chars": 976,
+      "total_chars": 1912,
+      "chinese_chars": 50
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.answer_token",
+      "count": 1,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 19,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.business_cn_name",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.business_id",
+      "count": 2,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 38,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.business_type",
+      "count": 2,
+      "min_chars": 11,
+      "max_chars": 11,
+      "total_chars": 22,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.content_token",
+      "count": 2,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 38,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.content_type",
+      "count": 2,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 12,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.copyright",
+      "count": 1,
+      "min_chars": 9,
+      "max_chars": 9,
+      "total_chars": 9,
+      "chinese_chars": 8
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.ad_data[*].ad_activity_id",
+      "count": 1,
+      "min_chars": 26,
+      "max_chars": 26,
+      "total_chars": 26,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.button_text",
+      "count": 1,
+      "min_chars": 7,
+      "max_chars": 7,
+      "total_chars": 7,
+      "chinese_chars": 7
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.coupon_mid_box_text",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.coupon_price_text",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.coupon_title",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.jump_url",
+      "count": 1,
+      "min_chars": 37,
+      "max_chars": 37,
+      "total_chars": 37,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.price_text",
+      "count": 1,
+      "min_chars": 1,
+      "max_chars": 1,
+      "total_chars": 1,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.raw_price_text",
+      "count": 1,
+      "min_chars": 9,
+      "max_chars": 9,
+      "total_chars": 9,
+      "chinese_chars": 4
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.style",
+      "count": 1,
+      "min_chars": 2,
+      "max_chars": 2,
+      "total_chars": 2,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.dynamics_card.sub_title",
+      "count": 1,
+      "min_chars": 14,
+      "max_chars": 14,
+      "total_chars": 14,
+      "chinese_chars": 11
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.img_day_url",
+      "count": 1,
+      "min_chars": 62,
+      "max_chars": 62,
+      "total_chars": 62,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.img_night_url",
+      "count": 1,
+      "min_chars": 62,
+      "max_chars": 62,
+      "total_chars": 62,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.normal_head_line.text",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.scene",
+      "count": 2,
+      "min_chars": 13,
+      "max_chars": 13,
+      "total_chars": 26,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.sku_id",
+      "count": 1,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 19,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.style",
+      "count": 2,
+      "min_chars": 2,
+      "max_chars": 2,
+      "total_chars": 4,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.text",
+      "count": 1,
+      "min_chars": 7,
+      "max_chars": 7,
+      "total_chars": 7,
+      "chinese_chars": 7
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.title_line.end_text",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.title_line.jump_text",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.title_line.start_text",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.title_line.url",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.url",
+      "count": 1,
+      "min_chars": 181,
+      "max_chars": 181,
+      "total_chars": 181,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.vip_head_line.big_text",
+      "count": 1,
+      "min_chars": 4,
+      "max_chars": 4,
+      "total_chars": 4,
+      "chinese_chars": 4
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.vip_head_line.icon",
+      "count": 1,
+      "min_chars": 80,
+      "max_chars": 80,
+      "total_chars": 80,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.vip_head_line.text",
+      "count": 1,
+      "min_chars": 5,
+      "max_chars": 5,
+      "total_chars": 5,
+      "chinese_chars": 5
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.vip_head_line.text_url",
+      "count": 1,
+      "min_chars": 88,
+      "max_chars": 88,
+      "total_chars": 88,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.vip_head_line.url",
+      "count": 1,
+      "min_chars": 88,
+      "max_chars": 88,
+      "total_chars": 88,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.vip_type",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.za.answer_token",
+      "count": 1,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 19,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.za.brand_content_type",
+      "count": 1,
+      "min_chars": 5,
+      "max_chars": 5,
+      "total_chars": 5,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.za.brand_tag_type",
+      "count": 1,
+      "min_chars": 5,
+      "max_chars": 5,
+      "total_chars": 5,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.za.brand_type",
+      "count": 1,
+      "min_chars": 4,
+      "max_chars": 4,
+      "total_chars": 4,
+      "chinese_chars": 4
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.za.content_id",
+      "count": 1,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 19,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.za.content_token",
+      "count": 1,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 19,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.za.content_type",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info::<json>.za.product_type",
+      "count": 1,
+      "min_chars": 11,
+      "max_chars": 11,
+      "total_chars": 11,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.id",
+      "count": 2,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].id",
+      "count": 158,
+      "min_chars": 0,
+      "max_chars": 3,
+      "total_chars": 358,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].paragraph.marks[*].entity_word.attach_info_bytes",
+      "count": 1,
+      "min_chars": 460,
+      "max_chars": 460,
+      "total_chars": 460,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].paragraph.marks[*].entity_word.id",
+      "count": 1,
+      "min_chars": 1,
+      "max_chars": 1,
+      "total_chars": 1,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].paragraph.marks[*].entity_word.type",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].paragraph.marks[*].entity_word.url",
+      "count": 1,
+      "min_chars": 955,
+      "max_chars": 955,
+      "total_chars": 955,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].paragraph.marks[*].entity_word.word",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 3
+    },
+    {
+      "path": "$.structured_content.segments[*].paragraph.marks[*].type",
+      "count": 1,
+      "min_chars": 11,
+      "max_chars": 11,
+      "total_chars": 11,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].paragraph.text",
+      "count": 156,
+      "min_chars": 3,
+      "max_chars": 59,
+      "total_chars": 2787,
+      "chinese_chars": 2342
+    },
+    {
+      "path": "$.structured_content.segments[*].type",
+      "count": 158,
+      "min_chars": 4,
+      "max_chars": 9,
+      "total_chars": 1412,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.comment.place_holder",
+      "count": 1,
+      "min_chars": 14,
+      "max_chars": 14,
+      "total_chars": 14,
+      "chinese_chars": 14
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].attached_info",
+      "count": 6,
+      "min_chars": 216,
+      "max_chars": 244,
+      "total_chars": 1392,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].display_query",
+      "count": 6,
+      "min_chars": 6,
+      "max_chars": 13,
+      "total_chars": 62,
+      "chinese_chars": 62
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].hot_icon",
+      "count": 6,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].id",
+      "count": 6,
+      "min_chars": 19,
+      "max_chars": 20,
+      "total_chars": 117,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].link_url",
+      "count": 6,
+      "min_chars": 508,
+      "max_chars": 597,
+      "total_chars": 3368,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.related_queries.queries[*].real_query",
+      "count": 6,
+      "min_chars": 6,
+      "max_chars": 13,
+      "total_chars": 62,
+      "chinese_chars": 62
+    },
+    {
+      "path": "$.third_business.ring.avatar",
+      "count": 1,
+      "min_chars": 80,
+      "max_chars": 80,
+      "total_chars": 80,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.ring.dynamics.dynamics_text",
+      "count": 1,
+      "min_chars": 15,
+      "max_chars": 15,
+      "total_chars": 15,
+      "chinese_chars": 14
+    },
+    {
+      "path": "$.third_business.ring.dynamics.dynamics_type",
+      "count": 1,
+      "min_chars": 3,
+      "max_chars": 3,
+      "total_chars": 3,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.ring.dynamics.dynamics_url",
+      "count": 1,
+      "min_chars": 73,
+      "max_chars": 73,
+      "total_chars": 73,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.ring.id",
+      "count": 1,
+      "min_chars": 19,
+      "max_chars": 19,
+      "total_chars": 19,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.ring.member_avatars[*]",
+      "count": 3,
+      "min_chars": 80,
+      "max_chars": 80,
+      "total_chars": 240,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.third_business.ring.membership_text",
+      "count": 1,
+      "min_chars": 8,
+      "max_chars": 8,
+      "total_chars": 8,
+      "chinese_chars": 4
+    },
+    {
+      "path": "$.third_business.ring.ring_name",
+      "count": 1,
+      "min_chars": 4,
+      "max_chars": 4,
+      "total_chars": 4,
+      "chinese_chars": 4
+    },
+    {
+      "path": "$.third_business.ring.ring_second_line_text",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 3
+    },
+    {
+      "path": "$.third_business.ring.second_text",
+      "count": 1,
+      "min_chars": 18,
+      "max_chars": 18,
+      "total_chars": 18,
+      "chinese_chars": 6
+    },
+    {
+      "path": "$.third_business.ring.target_url",
+      "count": 1,
+      "min_chars": 68,
+      "max_chars": 68,
+      "total_chars": 68,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.thumbnail",
+      "count": 1,
+      "min_chars": 0,
+      "max_chars": 0,
+      "total_chars": 0,
+      "chinese_chars": 0
+    },
+    {
+      "path": "$.type",
+      "count": 1,
+      "min_chars": 6,
+      "max_chars": 6,
+      "total_chars": 6,
+      "chinese_chars": 0
+    }
+  ],
+  "non_story_textual_candidates": [
+    {
+      "path": "$.header.sub_title.text",
+      "chars": 23,
+      "chinese_chars": 8,
+      "role": "other_root_fields",
+      "entire_value_is_in_recognized_story": false,
+      "anchor_matches": 0
+    },
+    {
+      "path": "$.question.review_info.edit_tips",
+      "chars": 18,
+      "chinese_chars": 17,
+      "role": "question_metadata",
+      "entire_value_is_in_recognized_story": false,
+      "anchor_matches": 0
+    },
+    {
+      "path": "$.question.review_info.tips",
+      "chars": 18,
+      "chinese_chars": 17,
+      "role": "question_metadata",
+      "entire_value_is_in_recognized_story": false,
+      "anchor_matches": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info",
+      "chars": 976,
+      "chinese_chars": 21,
+      "role": "header_or_tail_card_fields",
+      "entire_value_is_in_recognized_story": false,
+      "anchor_matches": 0
+    },
+    {
+      "path": "$.structured_content.segments[*].card.extra_info",
+      "chars": 936,
+      "chinese_chars": 29,
+      "role": "header_or_tail_card_fields",
+      "entire_value_is_in_recognized_story": false,
+      "anchor_matches": 0
+    }
+  ],
+  "raw_values_logged": false
+}
